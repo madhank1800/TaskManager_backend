@@ -15,7 +15,10 @@ const options = {
 };
 try {
   // mongoose.connect("mongodb://127.0.0.1:27017/madhandatabase", options);
-  mongoose.connect("mongodb://127.0.0.1:27017/taskdb", options);
+  mongoose.connect(
+    "mongodb+srv://madhan:Madhan123@cluster0.jlzoiqw.mongodb.net/taskdb",
+    options
+  );
 } catch (error) {
   throw new Error("invalid database namae");
 }
