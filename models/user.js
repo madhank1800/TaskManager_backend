@@ -39,7 +39,7 @@ userSchema.pre("save", function save(next) {
 
 userSchema.pre("findOneAndUpdate", function findOneAndUpdate(next) {
   const user = this;
-  console.log("user***", user._update["$set"].password);
+ // console.log("user***", user._update["$set"].password);
   bcrypt.genSalt(10, (err, salt) => {
     if (err) throw err;
     // console.log(salt);
